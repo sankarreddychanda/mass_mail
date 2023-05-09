@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Send Mass Mail</title>
+</head>
+<body>
+  <h1>Send Mass Mail</h1>
+
+  <form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="csv_file">
+    <input type="submit" value="Send">
+  </form>
+
+</body>
+</html>
